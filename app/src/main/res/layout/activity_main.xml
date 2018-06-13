@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#999"
+        android:onClick="toViews"
+        android:padding="10dp"
+        android:text="views"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toPath"
+        android:padding="10dp"
+        android:text="path"
+        app:layout_constraintLeft_toRightOf="@+id/tv_views"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_paint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toPaint"
+        android:padding="10dp"
+        android:text="paint"
+        app:layout_constraintLeft_toRightOf="@+id/tv_path"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toCanvas"
+        android:padding="10dp"
+        android:text="canvas"
+        app:layout_constraintLeft_toRightOf="@+id/tv_paint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

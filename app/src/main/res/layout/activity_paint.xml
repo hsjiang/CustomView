@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_shader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toShaderSample"
+        android:padding="10dp"
+        android:text="shader"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bitmap_shader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toBitmapShaderSample"
+        android:padding="10dp"
+        android:text="bitmapShader"
+        app:layout_constraintLeft_toRightOf="@id/tv_shader"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_color_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toColorFilter"
+        android:padding="10dp"
+        android:text="colorFilter"
+        app:layout_constraintLeft_toRightOf="@id/tv_bitmap_shader"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_xfermode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toXfermode"
+        android:padding="10dp"
+        android:text="xfermode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shader" />
+
+    <TextView
+        android:id="@+id/tv_line_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toLineAndShape"
+        android:padding="10dp"
+        android:text="lineAndShape"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_xfermode"
+        app:layout_constraintLeft_toRightOf="@id/tv_xfermode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toColorOptimize"
+        android:padding="10dp"
+        android:text="colorOptimize"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_line_shape"
+        app:layout_constraintLeft_toRightOf="@id/tv_line_shape" />
+
+</android.support.constraint.ConstraintLayout>

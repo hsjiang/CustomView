@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riven_chris.customview.canvas.CanvasActivity">
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toText"
+        android:padding="10dp"
+        android:text="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toClip"
+        android:padding="10dp"
+        android:text="clip"
+        app:layout_constraintLeft_toRightOf="@id/tv_path"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toMatrix"
+        android:padding="10dp"
+        android:text="matrix"
+        app:layout_constraintLeft_toRightOf="@id/tv_clip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_camera_canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#999"
+        android:onClick="toCameraCanvas"
+        android:padding="10dp"
+        android:text="camera"
+        app:layout_constraintLeft_toRightOf="@id/tv_matrix"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

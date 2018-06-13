@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomView</string>
+    <string name="title_activity_line_and_shape">LineAndShape</string>
+    <string name="title_activity_color_optimize">ColorOptimizeActivity</string>
+</resources>
